@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="vendor/jquery/dist/jquery.min.js"></script>
+	<script src="vendor/chai/chai.js"></script>
+	<script src="vendor/mocha/mocha.js"></script>
+	<script src="vendor/sinon-1.17.6/index.js"></script>
+	
+	<script>
+		mocha.setup('bdd');
+	</script>
+	<script>
+		var assert = chai.assert;
+		var expect = chai.expect;
+	</script>
+	<title>Test</title>
+
+	<link rel="stylesheet" href="vendor/mocha/mocha.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- app -->
+	<script src="spec/mock_options.js"></script>
+	<script src="js/options_reader.js"></script>
+	<script src="js/screen.js"></script>
+	<script src="js/view.js"></script>
+	<script src="js/game.js"></script>
+
+	<!-- specs -->
+	<script src="spec/mock_server.js"></script>
+	<script src="spec/screen.js"></script>
+	<script src="spec/game.js"></script>
+
+	<div id="app">
+		<div id="task">
+			<div id="bg"></div>
+			<div id="actions"></div>
+		</div>
+		<div id="bottom">
+			<div id="speech"></div>
+			<div id="character"></div>
+		</div>
+	</div>
+
+	<div id="mocha"></div>
+
+	<script>
+		mocha.run();
+	</script>
+</body>
+</html>

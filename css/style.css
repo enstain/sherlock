@@ -1,0 +1,45 @@
+#app {
+	width: 800px;
+	min-height: 560px;
+	border: 1px solid #eee;
+	margin: auto;
+	position: relative;
+}
+
+#task {
+	min-height: 400px;
+	position: relative;
+}
+
+#actions {
+	position: absolute;
+	bottom: 10px;
+}
+
+#bottom {
+	border-top: 1px solid black;
+	min-height: 180px;
+	clear: both;
+}
+
+#speech {
+	box-sizing: border-box;
+	float: left;
+	width: 400px;
+	padding: 10px;
+}
+
+#character {
+	float: left;
+	width: 240px;
+	text-align: center;
+}
+
+#task .object {
+	position: absolute;
+	cursor: pointer;
+}
+
+#task .object.selected {
+	box-shadow: 1px 1px black;
+}
