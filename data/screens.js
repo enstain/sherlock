@@ -89,7 +89,7 @@ var SCREENS = {
 		"bg":			"bg1.jpg",
 		"type":			"speech",
 		"speech":		"Ладно, логика присутствует, считать умеешь. Давай вернем ваш “профит”. Сначала зайдем к моему знакомому в крупную партнерку. Сдается мне, что вы просто плохо льете. Готов?",
-		"button":		"Пойдем",
+		"button":		"Пойти с Шерлоком",
 		"response": 	"screen::room_with_objects"
 	},
 
@@ -99,22 +99,52 @@ var SCREENS = {
 		"speech":		"Хм, пустота.  Вопрос в том, куда все подевались и как пройти дальше?",
 		"objects":		[
 			{
-				"img":		"object1.jpg",
+				"img":		"abgymnic.png",
 				"position":	[0,0],
 				"right":	false,
 				"response": "speech::Решил похудеть и просочиться в дверную щель? Гениально… Зачем я только взял тебя с собой?"
 			},
 			{
-				"img":		"object2.jpg",
+				"img":		"monk_tea.png",
 				"position":	[0,0],
 				"right":	false,
 				"response":	"speech::Сейчас не 4 o'clock. Чаепитие(хотя это и чаем не назовешь) подождет"
 			},
 			{
-				"img":		"object3.jpg",
+				"img":		"tital_gel.png",
+				"position":	[0,0],
+				"right":	false,
+				"response": "speech::Я уже сомневаюсь, что ты привел меня в пустую комнату искать профит… Может вернемся к делу?"
+			},
+			{
+				"img":		"banana.png",
+				"position":	[0,0],
+				"right":	false,
+				"response": "speech::Это еще что? Не могу представить себе, зачем такие пошлости на работе? Что можно рекламировать ЭТИМ?"
+			},
+			{
+				"img":		"dumplings.png",
+				"position":	[0,0],
+				"right":	false,
+				"response": "speech::Вы все помешаны на пельмешках? Или это такое плоское чувство юмора?"
+			},
+			{
+				"img":		"waiter.png",
+				"position":	[0,0],
+				"right":	false,
+				"response": "speech::Даже ждун устал наблюдать за твоими попытками… Напрягись, арбитражник!"
+			},
+			{
+				"img":		"games.png",
+				"position":	[0,0],
+				"right":	false,
+				"response": "speech::Отличная мысль. Не завод, так игровые автоматы! Гениально… Зачем тебе вообще профит?"
+			},
+			{
+				"img":		"cipher.png",
 				"position":	[0,0],
 				"right":	true
-			}
+			},
 		],
 		"response": "screen::roman_cipher" 
 	},
@@ -134,40 +164,74 @@ var SCREENS = {
 		"speech":		"О, отчаянный арбитражник и какой-то чудик. Вы не заслуживаете профита! Обленились и ищите готовые решения! Никакого креатива. Хотя, чтобы получить профит каждому нужно лишь 3 вещи! Уверен, ты не найдешь даже их!",
 		"objects":		[
 			{
-				"img":		"computer.jpg",
+				"img":		"computer.png",
 				"position":	[0,0],
 				"right":	true,
 				"response":	"speech:sherlock::Главное оружие найдено. Но не каждый человек с компьютером — арбитражник. Что еще?"
 			},
 			{
-				"img":		"conversion.jpg",
-				"position": [0,0],
+				"img":		"conversion.png",
+				"position": [20,0],
 				"right":	true,
 				"response":	"speech:sherlock::Концентрат полезной информации по манимейкингу в одном месте? Да, это нам пригодится."
 			},
 			{
-				"img":		"sedative.jpg",
-				"position":	[0,0],
+				"img":		"sedative.png",
+				"position":	[40,0],
 				"right":	true,
 				"response":	"speech:sherlock::Крепкая нервная система пригодится тебе в борьбе с пельменной."
 			},
 			{
-				"img":		"whiskey.jpg",
-				"position":	[0,0],
+				"img":		"vodka.png",
+				"position":	[0,100],
+				"right":	false,
+				"response":	"speech:sherlock::Я, конечно, слышал, что под алкоголем придумываются лучшие связки, но не в твоем случае"
+			},
+			{
+				"img":		"whiskey.png",
+				"position":	[30,100],
 				"right":	false,
 				"response":	"speech:sherlock::Благородный ирландский напиток. Но, его пьют только те, у кого есть профит. У тебя есть?"
 			},
+			{
+				"img":		"headphones.png",
+				"position":	[60,100],
+				"right":	false,
+				"response":	"speech:sherlock::Хочешь слушать звук монеток падающих на WebMoney? Без профита тебе это не пригодится"
+			},
+			{
+				"img":		"cigaretes.png",
+				"position":	[90,100],
+				"right":	false,
+				"response":	"speech:sherlock::Ты бы еще выбрал вэйп. Можно успокоить нервы другим способом."
+			},
+			{
+				"img":		"urna.png",
+				"position":	[120,100],
+				"right":	false,
+				"response":	"speech:sherlock::Не уверен, что мусорное ведро — самый необходимый предмет. Хотя, тебе виднее."
+			},
+			{
+				"img":		"couch.png",
+				"position":	[150,100],
+				"right":	false,
+				"response":	"speech:sherlock::Да, да. Посиди. Тебе же некуда спешить..."
+			},
+			{
+				"img":		"skull.png",
+				"position":	[180,100],
+				"right":	false,
+				"response":	"speech:sherlock::Решил призвать черную магию? Ты в каком веке живешь? Еще по дереву постучи, авось профит вернется"
+			},
+			{
+				"img":		"notes.png",
+				"position":	[210,100],
+				"right":	false,
+				"response":	"speech:sherlock::Классическая музыка, конечно, улучшает мозговую активность, но тебе нужны более практичные предметы"
+			}
 
 		],
-		"response":	"screen::this_is_psycho"
-	},
-
-	"this_is_psycho": {
-		"type":			"speech",
-		"character":	"sherlock",
-		"speech":		"Этот псих просто развлекается. Что-же, сыграем. Запускай компьютер, арбитражник. Твой час настал.",
-		"button":		"Запустить компьютер",
-		"response":		"screen::notebook_task"
+		"response":	"screen::notebook_task"
 	},
 
 	"notebook_task": {
@@ -181,74 +245,99 @@ var SCREENS = {
 
 	"notebook_vk": {
 		"bg":			"vk_adverts.jpg",
-		"type":			"question",
+		"type":			"select",
 		"speech":		"Что ты видишь на экране?",
-		"answers":		[
+		"objects":		[
 			{
-				"text":		"Тизерные сети",
-				"response":	"screen::try_again"
+				"img":		"vk.png",
+				"position":	[0,0],
+				"right":	true
 			},
 			{
-				"text":		"Реклама Вконтакте",
-				"response":	"screen::notebook_tiser"
+				"img":		"mytarget.png",
+				"position":	[0,30],
+				"right":	false,
+				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"text":		"MyTarget",
-				"response":	"screen::try_again"
+				"img":		"adwords.png",
+				"position":	[0,60],
+				"right":	false,
+				"response": "speech::С этим бы и ребенок справился… Мне стыдно за тебя."
 			},
 			{
-				"text":		"Google Adwords",
-				"response":	"screen::try_again"
-			},
-		]
+				"img":		"kadam.png",
+				"position":	[0,90],
+				"right":	false,
+				"response": "speech::С этим бы и ребенок справился… Мне стыдно за тебя."
+			}
+		],
+		"response": "screen::notebook_kadam" 
 	},
 
-	"notebook_tiser": {
-		"bg":			"tiser.jpg",
-		"type":			"question",
+	"notebook_kadam": {
+		"bg":			"kadam.jpg",
+		"type":			"select",
 		"speech":		"Что ты видишь на экране?",
-		"answers":		[
+		"objects":		[
 			{
-				"text":		"Тизерные сети",
-				"response":	"screen::notebook_adwords"
+				"img":		"vk.png",
+				"position":	[0,0],
+				"right":	false,
+				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"text":		"Реклама Вконтакте",
-				"response":	"screen::try_again"
+				"img":		"mytarget.png",
+				"position":	[0,30],
+				"right":	false,
+				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"text":		"MyTarget",
-				"response":	"screen::try_again"
+				"img":		"adwords.png",
+				"position":	[0,60],
+				"right":	false,
+				"response": "speech::С этим бы и ребенок справился… Мне стыдно за тебя."
 			},
 			{
-				"text":		"Google Adwords",
-				"response":	"screen::try_again"
-			},
-		]
+				"img":		"kadam.png",
+				"position":	[0,90],
+				"right":	true
+			}
+		],
+		"response": "screen::notebook_adwords" 
 	},
 
 	"notebook_adwords": {
-		"bg":			"google_adwords.jpg",
-		"type":			"question",
+		"bg":			"adwords.jpg",
+		"type":			"select",
 		"speech":		"Что ты видишь на экране?",
-		"answers":		[
+		"objects":		[
 			{
-				"text":		"Тизерные сети",
-				"response":	"screen::try_again"
+				"img":		"vk.png",
+				"position":	[0,0],
+				"right":	false,
+				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"text":		"Реклама Вконтакте",
-				"response":	"screen::try_again"
+				"img":		"mytarget.png",
+				"position":	[0,30],
+				"right":	false,
+				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"text":		"MyTarget",
-				"response":	"screen::try_again"
+				"img":		"adwords.png",
+				"position":	[0,60],
+				"right":	true
+				
 			},
 			{
-				"text":		"Google Adwords",
-				"response":	"screen::compare_two_task"
-			},
-		]
+				"img":		"kadam.png",
+				"position":	[0,90],
+				"right":	false,
+				"response": "speech::С этим бы и ребенок справился… Мне стыдно за тебя."
+			}
+		],
+		"response": "screen::compare_two_task" 
 	},
 
 	"compare_two_task": {
@@ -261,100 +350,213 @@ var SCREENS = {
 	},
 
 	"compare_vk": {
-		"bg":			"compare_vk.jpg",
-		"type":			"question",
+		"bg":			"blank_notebook.jpg",
+		"type":			"select",
 		"speech":		"Какой креатив лучше?",
-		"answers":		[
+		"objects": 		[
 			{
-				"text":		"1",
-				"right":	true
+				"img": 		"vk_ad_1.jpg",
+				"position": [0,0],
+				"right": 	true
 			},
 			{
-				"text":		"2",
-				"right":	false
-			}
+				"img": 		"vk_ad_2.jpg",
+				"position": [0,100],
+				"right": 	false,
+				"response": "speech::Не угадать из 2??? Да ты талант, ничего не скажешь."
+			},
 		],
-		"transitions":	{
-			"success":		"compare_mytarget",
-			"fault":		"try_again"
-		}
+		"response": 	"screen::compare_mytarget"
 	},
 
 	"compare_mytarget": {
-		"bg":			"compare_mytarget.jpg",
-		"type":			"question",
+		"bg":			"blank_notebook.jpg",
+		"type":			"select",
 		"speech":		"Какой креатив лучше?",
-		"answers":		[
+		"objects": 		[
 			{
-				"text":		"1",
-				"right":	true
+				"img": 		"mytarget_ad_1.jpg",
+				"position": [0,0],
+				"right": 	true
 			},
 			{
-				"text":		"2",
-				"right":	false
-			}
+				"img": 		"mytarget_ad_2.jpg",
+				"position": [0,100],
+				"right": 	false,
+				"response": "speech::Может все-таки завод? Больше пользы будет."
+			},
 		],
-		"transitions":	{
-			"success":		"compare_yandex",
-			"fault":		"try_again"
-		}
+		"response": 	"screen::compare_yandex"
 	},
 
 	"compare_yandex": {
-		"bg":			"compare_yandex.jpg",
-		"type":			"question",
+		"bg":			"blank_notebook.jpg",
+		"type":			"select",
 		"speech":		"Какой креатив лучше?",
-		"answers":		[
+		"objects": 		[
 			{
-				"text":		"1",
-				"right":	true
+				"img": 		"yandex_ad_1.jpg",
+				"position": [0,0],
+				"right": 	true
 			},
 			{
-				"text":		"2",
-				"right":	false
-			}
+				"img": 		"yandex_ad_2.jpg",
+				"position": [0,100],
+				"right": 	false,
+				"response": "speech::Ты поражаешь меня своим “выдающимся” интеллектом."
+			},
 		],
-		"transitions":	{
-			"success":		"support_task",
-			"fault":		"try_again"
-		}
+		"response": 	"screen::support_task"
 	},
 
 	"support_task":	{
 		"bg":			"support.jpg",
 		"type":			"speech",
 		"speech":		"Ты не так плох в техническом плане. Но арбитраж — не только владение инструментами. Вы постоянно жалуетесь на поддержку и саппорт партнерок! А были ли вы в их шкуре? Чувствовали всю боль, тысяч повторяющихся вопросов? Пора прочувствовать. Теперь ты агент поддержки. Покажи свои навыки коммуникации.",
-		"button":		"Принять клиента",
-		"transitions":	{
-			"direct":		"hello_customer"
-		}
+		"button":		"Я не боюсь, Шейв!",
+		"response": 	"screen::hello_customer"
 	},
 
 	"hello_customer": {
 		"type":			"question",
+		"character": 	"customer",
 		"speech":		"Добрый день. Мне срочно нужна профитная связка.",
 		"answers":		[
 			{
 				"text":		"Уточнить вертикаль, просмотреть статистику, подсказать связки, которые показывают лучшие результат",
-				"right":	true
+				"response":	"screen::high_cashback"
 			},
 			{
 				"text":		"Выдать за ответ один из топ5 офферов",
-				"right":	false
+				"response":	"screen::try_again"
 			},
 			{
 				"text":		"Подсказать оффер, на который требуется больше всего трафика",
-				"right":	false
+				"response":	"screen::try_again"
 			},
 			{
 				"text":		"В нашей партнерке — все офферы профитные. Выбирайте любой",
-				"right":	false
+				"response":	"screen::try_again"
 			},
 		],
-		"transitions":	{
-			"success":		"customer_high_return",
-			"fault":		"try_again"
-		}
-	}
+	},
+
+	"high_cashback": {
+		"type":			"question",
+		"character": 	"customer",
+		"speech":		"Можно мне повышенные отчисления?",
+		"answers":		[
+			{
+				"text":		"Безусловно. Давайте оценим трафик и его объемы, а так же посмотрим, какие условия может дать рекламодатель.",
+				"response":	"screen::why_hold"
+			},
+			{
+				"text":		"Легко. Сколько накинуть сверху? 20% хватит?",
+				"response":	"screen::try_again"
+			},
+			{
+				"text":		"Ты что, лучше всех? У нас даже топы на таких условиях льют, так что не ной.",
+				"response":	"screen::try_again"
+			},
+			{
+				"text":		"Мы не на базаре. Здесь не торгуются. Не можешь лить трафик — иди на завод.",
+				"response":	"screen::try_again"
+			},
+		],
+	},
+
+	"why_hold": {
+		"type":			"question",
+		"character": 	"customer",
+		"speech":		"Почему я не могу сразу получить выплату? Зачем вам холд???",
+		"answers":		[
+			{
+				"text":		"Это время нужно, чтобы проверить качество трафика, который вы предоставляете. После этого времени вы получит выплату, если выполнили все условия по оферу.",
+				"response":	"screen::what_is_subid"
+			},
+			{
+				"text":		"Чтобы такие умники, не наливали фрод.",
+				"response":	"screen::try_again"
+			},
+			{
+				"text":		"Не забивайте себе голову. Таково наши условия и их нельзя изменить.",
+				"response":	"screen::try_again"
+			},
+			{
+				"text":		"Нам же тоже нужны деньги, вы так не думаете? Откуда они будут, если мы их сразу будем раздавать?",
+				"response":	"screen::try_again"
+			},
+		],
+	},
+
+	"what_is_subid": {
+		"type":			"question",
+		"character": 	"customer",
+		"speech":		"Что за SUB ID? Зачем мне это?",
+		"answers":		[
+			{
+				"text":		"SUD ID позволяет вам размечать трафик и понимать откуда приходят конверсии. Это поможет вам в дальнейшей оптимизации. Могу помочь вам с разметкой.",
+				"response":	"screen::help_me"
+			},
+			{
+				"text":		"Пойдите погуглите.",
+				"response":	"screen::try_again"
+			},
+			{
+				"text":		"Вы же тут арбитражник? Как вы собирались лить, если ничего не знаете?",
+				"response":	"screen::try_again"
+			},
+			{
+				"text":		"SUB ID — ваш номер в системе, по которому мы понимаем кто же льет трафик. Впишите свой номер кабинета.",
+				"response":	"screen::try_again"
+			},
+		],
+	},
+
+	"help_me": {
+		"type":			"question",
+		"character": 	"customer",
+		"speech":		"Я савиршенно ни разбераюсь в арбитраже, но хочу зоробатывать))))) Памогите!",
+		"answers":		[
+			{
+				"text":		"Настоятельно рекомендую вам в начале ознакомиться с основами арбитража. Почитайте профильные форумы, блоги, паблики и изучите всевозможную информацию в интернете. Можете начать с conversion.im",
+				"response":	"screen::the_end"
+			},
+			{
+				"text":		"Это не красный крест. Здесь каждый помогает себе сам.",
+				"response":	"screen::try_again"
+			},
+			{
+				"text":		"Можете посмотреть технические инструкции в нашем FAQ, и смело запускать трафик.",
+				"response":	"screen::try_again"
+			},
+			{
+				"text":		"Арбитраж — дело несложное. Закидывайте деньги в источник, генерируйте ссылку и поехали. На ходу разберетесь.",
+				"response":	"screen::try_again"
+			},
+		],
+	},
+
+	"the_end": {
+		"bg":			"the_end.jpg",
+		"type":			"select",
+		"character": 	"shave", 
+		"speech":		"Жаль, что в мое время не было такого адекватного саппорта в партнерках… Наверное, нельзя было лить в неизвестные партнерки-однодневки. Поэтому сейчас мне приходится мстить им всем, а профит остался только в лучших партнерках Рунета и буржа. Туда мне хода нет, но ты можешь выбрать любую из моего проверенного списка. Их не коснулась моя шейв-рука, и они генерируют море профита каждый день. Каждая из них - лучшая в своей нише. Ты прошел испытание, наслаждайся морем профита и бонусами!",
+		"objects": 		[
+			{
+				"img": 		"partner1.jpg",
+				"position": [20,20],
+				"right": 	false,
+				"response": "speech::Список партнерок еще не утвержден"
+			},
+			{
+				"img": 		"partner2.jpg",
+				"position": [70,70],
+				"right": 	false,
+				"response": "speech::Список партнерок еще не утвержден"
+			},
+		],
+		"response": 	"screen::support_task"
+	},
 
 }
