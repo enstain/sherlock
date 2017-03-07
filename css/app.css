@@ -1,0 +1,11 @@
+body {
+  background-image: url('/img/bg.jpg');
+  background-size: cover;
+}
+#app {
+  width: 800px;
+  min-height: 560px;
+  border: 1px solid #eee;
+  margin: auto;
+  position: relative;
+}

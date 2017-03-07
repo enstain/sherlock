@@ -16,7 +16,7 @@ View.prototype.render = function() {
 }
 
 View.prototype.renderBackground = function(image_url) {
-	$('#bg').css('background', 'url(img/bg/'+image_url+')');
+	$('#bg').css('background-image', 'url(/img/bg/'+image_url+')');
 }
 
 View.prototype.handleSpeech = function(speechObject) {
@@ -25,20 +25,33 @@ View.prototype.handleSpeech = function(speechObject) {
 }
 
 View.prototype.renderSpeech = function(speech) {
-	$('#speech').hide();
-	$('#speech').html(speech);
-	$('#speech').fadeIn();
+	$('#speech > p').hide();
+	$('#speech > p').html(speech);
+	$('#speech > p').fadeIn();
 }
 
 View.prototype.renderCharacter = function(character) {
-	$('#character').html(character);	
+	$('#character').css({'background-image': 'url(/img/characters/'+character+'.png)'});
 }
 
 View.prototype.renderActions = function() {
-	$('#actions').html('');
-	$('#objects').html('');
+	var self = this;
 
-	this.screen.callRenderActions(this);
+	$('#task').removeClass();
+	$('#task').addClass(this.screen.type);
+
+	$('#actions').hide().html('');
+	$('#objects').hide().html('');	
+
+	self.screen.callRenderActions(self);
+
+	if (this.screen.type == 'question') {
+		$('#actions').append('<div class="gear"></div>');
+	}
+
+	$('#actions').fadeIn();
+	$('#objects').fadeIn();
+	
 }
 
 View.prototype.renderButton = function(buttonObject, callback) {
