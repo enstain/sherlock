@@ -72,15 +72,20 @@ View.prototype.renderButton = function(buttonObject, callback) {
 View.prototype.renderInput = function(button_text, callback) {
 	var controller = this.controller;
 
+	input_wrapper = $('<div class="input_wrapper"></div>');
+
 	input = $('<input/>', {
 		type: 'text',
+		placeholder: 'ответ'
 	});
+
+	input_wrapper.append(input);
 
 	button = $('<button>', {
 		text: button_text
 	});
 
-	$('#actions').append(input);
+	$('#actions').append(input_wrapper);
 	$('#actions').append(button);
 
 	button.click(function() {
@@ -93,7 +98,7 @@ View.prototype.renderObject = function(object, callback) {
 	var controller = this.controller;
 
 	var objectElement = $('<img/>', {
-		src: 'img/objects/'+object.img
+		src: 'img/objects/'+this.screen.id+'/'+object.img
 	});
 
 	objectElement.addClass('object');

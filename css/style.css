@@ -66,8 +66,13 @@ body {
   position: absolute;
   cursor: pointer;
 }
+#task .object:hover {
+  -webkit-filter: drop-shadow(0px 0px 20px #fffe00);
+  filter: drop-shadow(0px 0px 20px #fffe00);
+}
 #task .object.selected {
-  box-shadow: 1px 1px black;
+  -webkit-filter: drop-shadow(0px 0px 20px #00ff00);
+  filter: drop-shadow(0px 0px 20px #00ff00);
 }
 #bg {
   position: absolute;
@@ -115,6 +120,27 @@ button:hover:after {
   /* Safari */
   transform: rotate(0deg);
   transition: transform 0.5s ease-in-out;
+}
+#actions .input_wrapper {
+  position: absolute;
+  bottom: -25px;
+  z-index: 0;
+  border-style: solid;
+  border-width: 25px 25px 25px 25px;
+  -moz-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
+  -webkit-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
+  -o-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
+  border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
+}
+#actions .input_wrapper input[type="text"] {
+  border: none;
+  z-index: 1;
+  background-color: white;
+  font-family: "Baron Neue";
+  font-size: 24px;
+  line-height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #actions button {
   position: absolute;
@@ -190,6 +216,7 @@ button:hover:after {
 }
 #task.input #actions button:nth-child(2) {
   right: 40px !important;
+  font-size: 28px;
 }
 .speech_wrapper {
   position: relative;

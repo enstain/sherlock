@@ -95,54 +95,61 @@ var SCREENS = {
 
 	"room_with_objects": {
 		"bg":			"room.jpg",
+		"character": 	"sherlock", 
 		"type":			"select",
 		"speech":		"Хм, пустота.  Вопрос в том, куда все подевались и как пройти дальше?",
 		"objects":		[
 			{
+				"img":		"code.png",
+				"position":	[730,110],
+				"right":	false,
+				"response": "speech::Какой-то кодовый замок.. Надо поискать ключ к разгадке!"	
+			},
+			{
 				"img":		"abgymnic.png",
-				"position":	[0,0],
+				"position":	[280,350],
 				"right":	false,
 				"response": "speech::Решил похудеть и просочиться в дверную щель? Гениально… Зачем я только взял тебя с собой?"
 			},
 			{
 				"img":		"monk_tea.png",
-				"position":	[0,0],
+				"position":	[0,300],
 				"right":	false,
 				"response":	"speech::Сейчас не 4 o'clock. Чаепитие(хотя это и чаем не назовешь) подождет"
 			},
 			{
-				"img":		"tital_gel.png",
-				"position":	[0,0],
+				"img":		"titan_gel.png",
+				"position":	[760,240],
 				"right":	false,
 				"response": "speech::Я уже сомневаюсь, что ты привел меня в пустую комнату искать профит… Может вернемся к делу?"
 			},
 			{
 				"img":		"banana.png",
-				"position":	[0,0],
+				"position":	[550,10],
 				"right":	false,
 				"response": "speech::Это еще что? Не могу представить себе, зачем такие пошлости на работе? Что можно рекламировать ЭТИМ?"
 			},
 			{
 				"img":		"dumplings.png",
-				"position":	[0,0],
+				"position":	[160,-30],
 				"right":	false,
 				"response": "speech::Вы все помешаны на пельмешках? Или это такое плоское чувство юмора?"
 			},
 			{
 				"img":		"waiter.png",
-				"position":	[0,0],
+				"position":	[90,130],
 				"right":	false,
 				"response": "speech::Даже ждун устал наблюдать за твоими попытками… Напрягись, арбитражник!"
 			},
 			{
 				"img":		"games.png",
-				"position":	[0,0],
+				"position":	[240,105],
 				"right":	false,
 				"response": "speech::Отличная мысль. Не завод, так игровые автоматы! Гениально… Зачем тебе вообще профит?"
 			},
 			{
 				"img":		"cipher.png",
-				"position":	[0,0],
+				"position":	[280,20],
 				"right":	true
 			},
 		],
@@ -165,67 +172,67 @@ var SCREENS = {
 		"objects":		[
 			{
 				"img":		"computer.png",
-				"position":	[0,0],
+				"position":	[230,280],
 				"right":	true,
 				"response":	"speech:sherlock::Главное оружие найдено. Но не каждый человек с компьютером — арбитражник. Что еще?"
 			},
 			{
 				"img":		"conversion.png",
-				"position": [20,0],
+				"position": [340,0],
 				"right":	true,
 				"response":	"speech:sherlock::Концентрат полезной информации по манимейкингу в одном месте? Да, это нам пригодится."
 			},
 			{
 				"img":		"sedative.png",
-				"position":	[40,0],
+				"position":	[760,280],
 				"right":	true,
 				"response":	"speech:sherlock::Крепкая нервная система пригодится тебе в борьбе с пельменной."
 			},
 			{
 				"img":		"vodka.png",
-				"position":	[0,100],
+				"position":	[-30,150],
 				"right":	false,
 				"response":	"speech:sherlock::Я, конечно, слышал, что под алкоголем придумываются лучшие связки, но не в твоем случае"
 			},
 			{
 				"img":		"whiskey.png",
-				"position":	[30,100],
+				"position":	[160,260],
 				"right":	false,
 				"response":	"speech:sherlock::Благородный ирландский напиток. Но, его пьют только те, у кого есть профит. У тебя есть?"
 			},
 			{
 				"img":		"headphones.png",
-				"position":	[60,100],
+				"position":	[-20,-10],
 				"right":	false,
 				"response":	"speech:sherlock::Хочешь слушать звук монеток падающих на WebMoney? Без профита тебе это не пригодится"
 			},
 			{
-				"img":		"cigaretes.png",
-				"position":	[90,100],
+				"img":		"cigarettes.png",
+				"position":	[230,370],
 				"right":	false,
 				"response":	"speech:sherlock::Ты бы еще выбрал вэйп. Можно успокоить нервы другим способом."
 			},
 			{
 				"img":		"urna.png",
-				"position":	[120,100],
+				"position":	[20,300],
 				"right":	false,
 				"response":	"speech:sherlock::Не уверен, что мусорное ведро — самый необходимый предмет. Хотя, тебе виднее."
 			},
 			{
 				"img":		"couch.png",
-				"position":	[150,100],
+				"position":	[395,225],
 				"right":	false,
 				"response":	"speech:sherlock::Да, да. Посиди. Тебе же некуда спешить..."
 			},
 			{
 				"img":		"skull.png",
-				"position":	[180,100],
+				"position":	[710,-60],
 				"right":	false,
 				"response":	"speech:sherlock::Решил призвать черную магию? Ты в каком веке живешь? Еще по дереву постучи, авось профит вернется"
 			},
 			{
 				"img":		"notes.png",
-				"position":	[210,100],
+				"position":	[110,130],
 				"right":	false,
 				"response":	"speech:sherlock::Классическая музыка, конечно, улучшает мозговую активность, но тебе нужны более практичные предметы"
 			}

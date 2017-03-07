@@ -71,7 +71,7 @@ Screen.prototype.callRenderAnswers = function(view) {
 }
 
 Screen.prototype.callRenderInput = function(view) {
-	var button_text = "Ok",
+	var button_text = ">>",
 		callback = function(input_value) {
 			if (input_value == this.answer) {
 				return this.returnResponseObject(this.response[0]);
