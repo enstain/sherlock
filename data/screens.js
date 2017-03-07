@@ -161,7 +161,15 @@ var SCREENS = {
 		"type":			"input",
 		"speech":		"Это явно римский шифр. Но слишком простой. Я на такое тратить энергию не буду, так что давай сам. Могу лишь дать тебе Азбуку и подсказку. Стрелка и число указывает на сколько и в какую сторону нужно сдвинуть буквы, чтобы получилось слово.",
 		"answer":		"тизер",
-		"response": 	["screen::shaves_room", "screen::try_again"]
+		"response": 	["screen::room_unlocked", "screen::try_again"]
+	},
+
+	"room_unlocked": {
+		"bg": 			"room_unlocked.jpg",
+		"type": 		"speech",
+		"speech": 		"Ооо, кто-то играет с нами. Становится интересно",
+		"button": 		"Пойти с Шерлоком",
+		"response": 	"screen::shaves_room"
 	},
 
 	"shaves_room": {
@@ -242,7 +250,7 @@ var SCREENS = {
 	},
 
 	"notebook_task": {
-		"bg":			"notebook.jpg",
+		"bg":			"table.jpg",
 		"type":			"speech",
 		"character":	"shave",
 		"speech":		"Компьютер, информация и успокоительное — еще не все. Как ты можешь называть себя арбитражником, если даже не знаешь источники трафика? Бьюсь об заклад, ты не отличаешь объявления.",
@@ -256,25 +264,25 @@ var SCREENS = {
 		"speech":		"Что ты видишь на экране?",
 		"objects":		[
 			{
-				"img":		"vk.png",
-				"position":	[0,0],
+				"img":		"../vk.png",
+				"position":	[-20,300],
 				"right":	true
 			},
 			{
-				"img":		"mytarget.png",
-				"position":	[0,30],
+				"img":		"../mytarget.png",
+				"position":	[200,300],
 				"right":	false,
 				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"img":		"adwords.png",
-				"position":	[0,60],
+				"img":		"../adwords.png",
+				"position":	[410,300],
 				"right":	false,
 				"response": "speech::С этим бы и ребенок справился… Мне стыдно за тебя."
 			},
 			{
-				"img":		"kadam.png",
-				"position":	[0,90],
+				"img":		"../kadam.png",
+				"position":	[620,300],
 				"right":	false,
 				"response": "speech::С этим бы и ребенок справился… Мне стыдно за тебя."
 			}
@@ -288,26 +296,26 @@ var SCREENS = {
 		"speech":		"Что ты видишь на экране?",
 		"objects":		[
 			{
-				"img":		"vk.png",
-				"position":	[0,0],
+				"img":		"../vk.png",
+				"position":	[-20,300],
 				"right":	false,
 				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"img":		"mytarget.png",
-				"position":	[0,30],
+				"img":		"../mytarget.png",
+				"position":	[200,300],
 				"right":	false,
 				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"img":		"adwords.png",
-				"position":	[0,60],
+				"img":		"../adwords.png",
+				"position":	[410,300],
 				"right":	false,
 				"response": "speech::С этим бы и ребенок справился… Мне стыдно за тебя."
 			},
 			{
-				"img":		"kadam.png",
-				"position":	[0,90],
+				"img":		"../kadam.png",
+				"position":	[620,300],
 				"right":	true
 			}
 		],
@@ -320,26 +328,26 @@ var SCREENS = {
 		"speech":		"Что ты видишь на экране?",
 		"objects":		[
 			{
-				"img":		"vk.png",
-				"position":	[0,0],
+				"img":		"../vk.png",
+				"position":	[-20,300],
 				"right":	false,
 				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"img":		"mytarget.png",
-				"position":	[0,30],
+				"img":		"../mytarget.png",
+				"position":	[200,300],
 				"right":	false,
 				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"img":		"adwords.png",
-				"position":	[0,60],
+				"img":		"../adwords.png",
+				"position":	[410,300],
 				"right":	true
 				
 			},
 			{
-				"img":		"kadam.png",
-				"position":	[0,90],
+				"img":		"../kadam.png",
+				"position":	[620,300],
 				"right":	false,
 				"response": "speech::С этим бы и ребенок справился… Мне стыдно за тебя."
 			}
@@ -348,7 +356,7 @@ var SCREENS = {
 	},
 
 	"compare_two_task": {
-		"bg":			"notebook.jpg",
+		"bg":			"table.jpg",
 		"type":			"speech",
 		"character":	"shave",
 		"speech":		"Ладно, источники ты знаешь, а вот понять, какой креатив сделан лучше, сможешь?",
