@@ -365,18 +365,18 @@ var SCREENS = {
 	},
 
 	"compare_vk": {
-		"bg":			"blank_notebook.jpg",
+		"bg":			"",
 		"type":			"select",
 		"speech":		"Какой креатив лучше?",
 		"objects": 		[
 			{
-				"img": 		"vk_ad_1.jpg",
-				"position": [0,0],
+				"img": 		"vk_1.jpg",
+				"position": [10,-10],
 				"right": 	true
 			},
 			{
-				"img": 		"vk_ad_2.jpg",
-				"position": [0,100],
+				"img": 		"vk_2.jpg",
+				"position": [420,40],
 				"right": 	false,
 				"response": "speech::Не угадать из 2??? Да ты талант, ничего не скажешь."
 			},
@@ -385,38 +385,38 @@ var SCREENS = {
 	},
 
 	"compare_mytarget": {
-		"bg":			"blank_notebook.jpg",
+		"bg":			"",
 		"type":			"select",
 		"speech":		"Какой креатив лучше?",
 		"objects": 		[
 			{
-				"img": 		"mytarget_ad_1.jpg",
-				"position": [0,0],
+				"img": 		"mytarget_1.jpg",
+				"position": [0,40],
 				"right": 	true
 			},
 			{
-				"img": 		"mytarget_ad_2.jpg",
-				"position": [0,100],
+				"img": 		"mytarget_2.jpg",
+				"position": [440,40],
 				"right": 	false,
 				"response": "speech::Может все-таки завод? Больше пользы будет."
 			},
 		],
-		"response": 	"screen::compare_yandex"
+		"response": 	"screen::compare_adwords"
 	},
 
-	"compare_yandex": {
-		"bg":			"blank_notebook.jpg",
+	"compare_adwords": {
+		"bg":			"",
 		"type":			"select",
 		"speech":		"Какой креатив лучше?",
 		"objects": 		[
 			{
-				"img": 		"yandex_ad_1.jpg",
-				"position": [0,0],
+				"img": 		"adwords_1.jpg",
+				"position": [160,210],
 				"right": 	true
 			},
 			{
-				"img": 		"yandex_ad_2.jpg",
-				"position": [0,100],
+				"img": 		"adwords_2.jpg",
+				"position": [150,60],
 				"right": 	false,
 				"response": "speech::Ты поражаешь меня своим “выдающимся” интеллектом."
 			},
@@ -559,19 +559,37 @@ var SCREENS = {
 		"speech":		"Жаль, что в мое время не было такого адекватного саппорта в партнерках… Наверное, нельзя было лить в неизвестные партнерки-однодневки. Поэтому сейчас мне приходится мстить им всем, а профит остался только в лучших партнерках Рунета и буржа. Туда мне хода нет, но ты можешь выбрать любую из моего проверенного списка. Их не коснулась моя шейв-рука, и они генерируют море профита каждый день. Каждая из них - лучшая в своей нише. Ты прошел испытание, наслаждайся морем профита и бонусами!",
 		"objects": 		[
 			{
-				"img": 		"partner1.jpg",
-				"position": [20,20],
+				"img": 		"adcombo.png",
+				"position": [-50,150],
 				"right": 	false,
-				"response": "speech::Список партнерок еще не утвержден"
+				"response": "speech::Adcombo"
 			},
 			{
-				"img": 		"partner2.jpg",
-				"position": [70,70],
+				"img": 		"wapclick.png",
+				"position": [180,190],
 				"right": 	false,
-				"response": "speech::Список партнерок еще не утвержден"
+				"response": "speech::Wapclick"
+			},
+			{
+				"img": 		"alfaleads.png",
+				"position": [320,190],
+				"right": 	false,
+				"response": "speech::Alfaleads"
+			},
+			{
+				"img": 		"zorka.png",
+				"position": [580,190],
+				"right": 	false,
+				"response": "speech::Zorka"
+			},
+			{
+				"img": 		"ctr.png",
+				"position": [730,190],
+				"right": 	false,
+				"response": "speech::CTR"
 			},
 		],
-		"response": 	"screen::support_task"
+		"response": 	"screen::what_is_arbitrage"
 	},
 
 }
