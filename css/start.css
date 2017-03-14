@@ -1,0 +1,75 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Baron Neue';
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-image: url('/img/bg/index.jpg');
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.message-box-wrapper {
+	position: absolute;
+	width: 50%;
+	top: 50px;
+	right: 100px;
+
+	border-style: solid;
+	border-width: 50px 50px 50px 50px;
+	-moz-border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
+	-webkit-border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
+	-o-border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
+	border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
+}
+
+.message-box {
+	background-color: black;
+	color: white;
+	font-size: 20px;
+}
+
+.message-box p {
+	margin: 0;
+}
+
+.bottom {
+	position: absolute;
+	left: 0px;
+	bottom: 50px;
+	width: 100%;
+}
+
+.bottom .action .button {
+	top: -100px;
+	color: black;
+	text-decoration: none;
+	left: calc(50% - 250px);
+	width: 500px;
+	font-size: 26px;
+}
+
+.bottom .partners ul {
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.bottom .partners li {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 19%;
+	text-align: center;
+}
+
+.bottom .partners li img {
+	max-width: 100%;
+}

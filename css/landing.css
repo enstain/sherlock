@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Baron Neue';
+  src: url('/fonts/baron_neue-webfont.eot');
+  src: url('/fonts/baron_neue-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/baron_neue-webfont.woff2') format('woff2'), url('/fonts/baron_neue-webfont.woff') format('woff'), url('/fonts/baron_neue-webfont.ttf') format('truetype'), url('/fonts/baron_neue-webfont.svg#baron_neueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  outline: none;
+}
+body {
+  font-family: "Baron Neue";
+  background-color: gray;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url('/img/partners/bg/bg1.jpg');
+}
+.button {
+  font-family: "Baron Neue";
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  font-size: 18px;
+  line-height: 60px;
+  height: 60px;
+  display: inline-block;
+  padding: 0px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.button.yellow {
+  background: #ffe200;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffe200 0%, #ffe200 50%, #ffcc00 50%, #ffcc00 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffe200 0%, #ffe200 50%, #ffcc00 50%, #ffcc00 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffe200 0%, #ffe200 50%, #ffcc00 50%, #ffcc00 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffe200, endColorstr=#ffcc00, GradientType=0);
+  /* IE6-9 */
+  -webkit-box-shadow: 0px 4px 0px 0px #b79300;
+  -moz-box-shadow: 0px 4px 0px 0px #b79300;
+  box-shadow: 0px 4px 0px 0px #b79300;
+}
+.button.red {
+  color: white;
+  background: #ff4500;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ff4500 0%, #ff4500 50%, #ff2f00 50%, #ff2f00 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff4500 0%, #ff4500 50%, #ff2f00 50%, #ff2f00 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff4500 0%, #ff4500 50%, #ff2f00 50%, #ff2f00 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff4500, endColorstr=#ff2f00, GradientType=0);
+  /* IE6-9 */
+  -webkit-box-shadow: 0px 4px 0px 0px #b72200;
+  -moz-box-shadow: 0px 4px 0px 0px #b72200;
+  box-shadow: 0px 4px 0px 0px #b72200;
+}
+.button.blue {
+  color: white;
+  background: #00b9ff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #00b9ff 0%, #00b9ff 50%, #00cfff 50%, #00cfff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00b9ff 0%, #00b9ff 50%, #00cfff 50%, #00cfff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00b9ff 0%, #00b9ff 50%, #00cfff 50%, #00cfff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00b9ff, endColorstr=#00cfff, GradientType=0);
+  /* IE6-9 */
+  -webkit-box-shadow: 0px 4px 0px 0px #0094b7;
+  -moz-box-shadow: 0px 4px 0px 0px #0094b7;
+  box-shadow: 0px 4px 0px 0px #0094b7;
+}
+.container {
+  width: 786px;
+  margin: 50px auto;
+}
+.disclaimer {
+  color: white;
+  font-size: 24px;
+  border-right: 4px solid white;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+.disclaimer .share {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+}
+.disclaimer .share:before {
+  display: block;
+  content: "";
+  flex: 2 0 0;
+  height: 1px;
+  border-top: 4px solid white;
+}
+.disclaimer .share:after {
+  display: block;
+  content: "";
+  flex: 2 0 0;
+  height: 1px;
+  border-top: 4px solid white;
+}
+.disclaimer .share ul {
+  display: inline-block;
+  margin-top: -30px;
+  flex: 0 0 250px;
+  padding-left: 0;
+}
+.disclaimer .share ul li {
+  display: inline-block;
+}
+.disclaimer .share ul li a {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background-position: center center;
+  background-size: contain;
+}
+.disclaimer .share ul li a.vk {
+  background-image: url(/img/ui/icons/vk-big.png);
+}
+.disclaimer .share ul li a.fb {
+  background-image: url(/img/ui/icons/fb-big.png);
+}
+.disclaimer .share ul li a.tw {
+  background-image: url(/img/ui/icons/tw-big.png);
+}
+.subscribe {
+  margin-top: 70px;
+}
+.subscribe .row {
+  display: flex;
+}
+.subscribe .row .col {
+  margin: auto;
+}
+.subscribe .input {
+  font-family: "Baron Neue";
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  line-height: 60px;
+  height: 60px;
+  padding-left: 30px;
+  -webkit-box-shadow: 0px 4px 0px 0px #b7b7b7;
+  -moz-box-shadow: 0px 4px 0px 0px #b7b7b7;
+  box-shadow: 0px 4px 0px 0px #b7b7b7;
+}
+.partner {
+  position: relative;
+  margin-top: 70px;
+  background-color: white;
+  text-align: center;
+  padding: 20px 20px 40px;
+}
+.partner .logo {
+  display: inline-block;
+}
+.partner .button {
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 120px);
+}
+.offers {
+  margin-top: 90px;
+  text-align: center;
+}
+.offers .offers-head {
+  color: white;
+  border: 4px solid white;
+  padding: 15px 30px;
+  display: inline-block;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+.offers .row {
+  display: flex;
+  margin-bottom: 30px;
+}
+.offers .row .offer {
+  margin: auto;
+  width: 40%;
+  border: 4px solid white;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.offers .row .offer .offer-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+.offers .row .offer .offer-row .col {
+  margin: auto;
+}
+.offers .row .offer .offer-row .col span.head {
+  font-size: 24px;
+  display: block;
+}
+.offers .row .offer .offer-row .col.number {
+  color: #ffe200;
+  font-size: 48px;
+  margin-left: 20px;
+  margin-right: auto;
+}
+.offers .row .offer .offer-row .col.title {
+  margin: auto 0;
+  text-align: left;
+}
+.offers .row .offer .offer-row .col.thumbnail {
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.actions {
+  margin-top: 80px;
+  display: flex;
+}
+.actions .button {
+  margin: auto;
+}
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+}
+footer .logo {
+  margin: auto;
+}

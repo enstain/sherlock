@@ -1,66 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<script src="vendor/jquery/dist/jquery.min.js"></script>
-	<script src="data/game.js"></script>
-	<script src="data/screens.js"></script>
-	<script src="js/options_reader.js"></script>
-	<script src="js/screen.js"></script>
-	<script src="js/view.js"></script>
-	<script src="js/game.js"></script>
-	
-	<title>Game</title>
+	<title>Этюд о пропавшем профите</title>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="icon" href="/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/start.css">
 </head>
 <body>
-	<div id="app">
-		<div id="sharing">
-			Поделись квестом с друзьями:
-			<ul class="socials">
+
+	<div class="message-box-wrapper">
+		<div class="message-box">
+			<p>
+				Темные времена пришли в мир CPA. Аппрув упал ниже плинтуса, все офферы выгорели, креативы не цепляют даже глаз ребенка, на всех лендингах пропали кнопки CTA, стоимость трафика взлетела до небес, бесплатные источники отладили идеальные анти-спам системы… Арбитражники забыли, что значит “профит”. 
+			</p>
+			<p>
+				Ты и Шерлок — последняя надежда всего рынка.
+			</p>
+		</div>
+	</div>
+	
+	<div class="bottom">
+		<div class="action">
+			<a href="/quest.html" class="button">
+				Пройти квест и получить бонусы
+			</a>
+		</div>
+		<div class="partners">
+			<ul>
 				<li>
-					<a href="#" class="vk"></a>
+					<img src="img/partners/1.png" alt="">
 				</li>
 				<li>
-					<a href="#" class="tw"></a>
+					<img src="img/partners/2.png" alt="">
 				</li>
 				<li>
-					<a href="#" class="fb"></a>
+					<img src="img/partners/3.png" alt="">
+				</li>
+				<li>
+					<img src="img/partners/4.png" alt="">
+				</li>
+				<li>
+					<img src="img/partners/5.png" alt="">
 				</li>
 			</ul>
 		</div>
-		<div id="task">
-			<div id="bg"></div>
-			<div id="objects"></div>
-			<div id="actions"></div>
-		</div>
-		<div id="bottom">
-			<div class="speech_wrapper">
-				<div id="speech">
-					<p></p>
-				</div>	
-			</div>
-			
-			<div id="character"></div>
-		</div>
 	</div>
 
-	<svg height="0" xmlns="http://www.w3.org/2000/svg">
-	    <filter id="drop-shadow">
-	        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
-	        <feOffset dx="12" dy="12" result="offsetblur"/>
-	        <feFlood flood-color="rgba(0,0,0,0.5)"/>
-	        <feComposite in2="offsetblur" operator="in"/>
-	        <feMerge>
-	            <feMergeNode/>
-	            <feMergeNode in="SourceGraphic"/>
-	        </feMerge>
-	    </filter>
-	</svg>
-
-	<script>
-		game = new Game();
-		game.start();
-	</script>
 </body>
 </html>
