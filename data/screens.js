@@ -6,7 +6,7 @@ var SCREENS = {
 		"response":		"screen::_back"
 	},
 
-	"what_is_arbitrage": {
+	"start": {
 		"bg": 			"bg1.jpg",
 		"type": 		"question",
 		"character": 	"sherlock",
@@ -78,7 +78,7 @@ var SCREENS = {
 	},
 
 	"calc_roi":	{
-		"bg":			"roi_task.jpg",
+		"bg":			"roi.jpg",
 		"type":			"input",
 		"speech":		"Хорошо, что ты шутить не начал. Ненавижу низкопробный юмор. В любом случае, брать тебя на дело ради компании — не в моем стиле. Докажи, что ты в теме и выдвигаемся. Надеюсь, считать ты умеешь. Какой ROI получил арбитражник?",
 		"answer":		"100",
@@ -103,7 +103,7 @@ var SCREENS = {
 				"img":		"code.png",
 				"position":	[730,110],
 				"right":	false,
-				"response": "speech::Какой-то кодовый замок.. Надо поискать ключ к разгадке!"	
+				"response": "speech::Похоже, что на замке шифр из 5 букв. Нужно найти и разгадать его, арбитражник!"	
 			},
 			{
 				"img":		"abgymnic.png",
@@ -250,7 +250,7 @@ var SCREENS = {
 	},
 
 	"notebook_task": {
-		"bg":			"table.jpg",
+		"bg":			"shaves_room_solved.jpg",
 		"type":			"speech",
 		"character":	"shave",
 		"speech":		"Компьютер, информация и успокоительное — еще не все. Как ты можешь называть себя арбитражником, если даже не знаешь источники трафика? Бьюсь об заклад, ты не отличаешь объявления.",
@@ -365,7 +365,7 @@ var SCREENS = {
 	},
 
 	"compare_vk": {
-		"bg":			"",
+		"bg":			"none",
 		"type":			"select",
 		"speech":		"Какой креатив лучше?",
 		"objects": 		[
@@ -385,7 +385,7 @@ var SCREENS = {
 	},
 
 	"compare_mytarget": {
-		"bg":			"",
+		"bg":			"none",
 		"type":			"select",
 		"speech":		"Какой креатив лучше?",
 		"objects": 		[
@@ -405,7 +405,7 @@ var SCREENS = {
 	},
 
 	"compare_adwords": {
-		"bg":			"",
+		"bg":			"none",
 		"type":			"select",
 		"speech":		"Какой креатив лучше?",
 		"objects": 		[
@@ -589,7 +589,7 @@ var SCREENS = {
 				"response": "speech::CTR"
 			},
 		],
-		"response": 	"screen::what_is_arbitrage"
+		"response": 	"screen::start"
 	},
 
 }

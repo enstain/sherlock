@@ -62,7 +62,24 @@ Screen.prototype.callRenderButton = function(view) {
 
 Screen.prototype.callRenderAnswers = function(view) {
 
-	this.answers.forEach(function(answer) {
+	var answers = this.answers;
+
+	var shuffle = function(array) {
+	  var i = 0
+	    , j = 0
+	    , temp = null
+
+	  for (i = array.length - 1; i > 0; i -= 1) {
+	    j = Math.floor(Math.random() * (i + 1))
+	    temp = array[i]
+	    array[i] = array[j]
+	    array[j] = temp
+	  }
+	}
+
+	shuffle(answers);
+
+	answers.forEach(function(answer) {
 		var callback = function(selected_answer) {
 				return this.returnResponseObject(selected_answer.response);
 			}

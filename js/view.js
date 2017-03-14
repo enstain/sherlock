@@ -16,7 +16,12 @@ View.prototype.render = function() {
 }
 
 View.prototype.renderBackground = function(image_url) {
-	$('#bg').css('background-image', 'url(/img/bg/'+image_url+')');
+
+	if (image_url != 'none') {
+		$('#bg').css('background-image', 'url(/img/bg/'+image_url+')');
+	} else {
+		$('#bg').css('background-image', '');
+	}
 }
 
 View.prototype.handleSpeech = function(speechObject) {
