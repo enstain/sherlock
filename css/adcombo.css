@@ -1,0 +1,49 @@
+body {
+	background-image: url('/img/partners/adcombo/bg.jpg');
+}
+
+.rocket {
+	background-image: url('/img/partners/adcombo/rocket.png');
+	width: 50vw;
+	height: 50vw;
+	left: 0px;
+	top: -400px;
+	background-position: center;
+}
+
+.iphone {
+	background-image: url('/img/partners/adcombo/iphone.png');
+	width: 30vw;
+	height: 30vw;
+	top: 200px;
+	left: 0;
+	background-position: left;
+}
+
+.watch {
+	background-image: url('/img/partners/adcombo/watch.png');
+	width: 30vw;
+	height: 30vw;
+	top: -100px;
+	right: 50px;
+	background-position: right;
+}
+
+.turtle {
+	background-image: url('/img/partners/adcombo/turtle.png');
+	left: 0px;
+	bottom: 0px;
+	width: 400px;
+	height: 300px;
+	z-index: 2;
+	background-position: bottom;
+}
+
+.ferrari {
+	background-image: url('/img/partners/adcombo/ferrari.png');
+	width: 700px;
+	height: 400px;
+	bottom: 0px;
+	right: 0;
+	background-position: right;	
+}

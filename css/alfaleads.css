@@ -2,13 +2,6 @@ body {
 	background-image: url('/img/partners/alfaleads/bg.jpg');
 }
 
-.object {
-	position: absolute;
-	z-index: -1;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
 .car {
 	background-image: url('/img/partners/alfaleads/car.png');
 	width: 1200px;
