@@ -1,0 +1,70 @@
+body {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de284b+0,724589+100 */
+	background: #de284b; /* Old browsers */
+	background: -moz-linear-gradient(left,  #de284b 0%, #724589 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #de284b 0%,#724589 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #de284b 0%,#724589 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de284b', endColorstr='#724589',GradientType=1 ); /* IE6-9 */
+}
+
+.partner.colored {
+	margin-top: 0px;
+}
+
+.partner.colored .bg {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de284b+0,724589+100 */
+	background: #de284b; /* Old browsers */
+	background: -moz-linear-gradient(left, #724589 0%, #de284b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #724589 0%, #de284b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #724589 0%, #de284b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#724589', endColorstr='#de284b',GradientType=1 ); /* IE6-9 */
+
+	color: white;
+}
+
+.partner .disclaimer {
+	position: relative;
+	bottom: 50px;
+	margin: 0;
+	color: black;
+	font-size: 36px;
+	display: inline;
+	line-height: 80px;
+	border: none;
+	background-color: #ffe200;
+}
+
+.phone {
+	background-image: url('/img/partners/zorka/phone.png');
+	left: 0px;
+	top: -20vh;
+	width: 50vw;
+	height: 50vw;
+	background-position: left;
+}
+
+.viking {
+	background-image: url('/img/partners/zorka/viking.png');
+	top: 150px;
+	width: 768px;
+	height: 500px;
+	background-position: center;
+}
+
+.viking_left {
+	background-image: url('/img/partners/zorka/viking_left.png');
+	left: 0px;
+	width: 40vw;
+	height: 800px;
+	bottom: 0px;
+	background-position: bottom left;
+}
+
+.viking_right {
+	background-image: url('/img/partners/zorka/viking_right.png');
+	right: 0px;
+	width: 40vw;
+	height: 800px;
+	bottom: 0px;
+	background-position: right bottom;
+}
