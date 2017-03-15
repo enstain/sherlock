@@ -103,14 +103,31 @@ View.prototype.renderObject = function(object, callback) {
 	var controller = this.controller;
 
 	var objectElement = $('<img/>', {
-		src: 'img/objects/'+this.screen.id+'/'+object.img
+		src: 'img/objects/'+this.screen.id+'/'+object.img,
+		class: 'object'
 	});
 
-	objectElement.addClass('object');
+	var objectWrapper, wrapper;
 
-	objectElement.css({'left': object.position[0], 'top': object.position[1]});
+	if (object.title) {
+		wrapper = $('<a>', {
+			title: object.title
+		});
 
-	$('#objects').append(objectElement);
+		wrapper.addClass('tooltip');
+
+		wrapper.css({'left': object.position[0], 'top': object.position[1]});
+
+		wrapper.append(objectElement);
+
+		objectWrapper = wrapper;
+	} else {
+		objectElement.css({'left': object.position[0], 'top': object.position[1]});
+
+		objectWrapper = objectElement;
+	}
+
+	$('#objects').append(objectWrapper);
 
 	object.element = objectElement;
 

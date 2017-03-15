@@ -52,6 +52,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 #sharing ul.socials li a.vk {
   background-image: url('/img/ui/icons/vk.png');
@@ -71,6 +72,29 @@ body {
   -webkit-border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
   -o-border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
   border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
+}
+#task .tooltip {
+  display: inline;
+  position: absolute;
+}
+#task .tooltip:after {
+  font-family: sans-serif;
+  background: #333;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  bottom: 26px;
+  color: #fff;
+  content: attr(title);
+  left: 20%;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 98;
+  width: 220px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#task .tooltip:hover:after {
+  opacity: 1;
 }
 #task .object {
   position: absolute;

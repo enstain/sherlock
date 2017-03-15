@@ -560,33 +560,38 @@ var SCREENS = {
 		"objects": 		[
 			{
 				"img": 		"adcombo.png",
+				"title": 	"Хочешь покорить бурж и получать выплаты в $$$? Тогда это твой выбор",
 				"position": [-50,150],
 				"right": 	false,
-				"response": "speech::Adcombo"
+				"response": "redirect::http://quest.conversion.im/adcombo.html"
 			},
 			{
 				"img": 		"wapclick.png",
+				"title": 	"Мобильные подписки могут станут твоей золотой жилой и пассивным источником заработка!",
 				"position": [180,190],
 				"right": 	false,
-				"response": "speech::Wapclick"
+				"response": "redirect::http://quest.conversion.im/wapclick.html"
 			},
 			{
 				"img": 		"alfaleads.png",
+				"title": 	"Гэмблинг — вот где крутятся большие деньги! Готов зарабатывать на азарте?",
 				"position": [320,190],
 				"right": 	false,
-				"response": "speech::Alfaleads"
+				"response": "redirect::http://quest.conversion.im/alfaleads.html"
 			},
 			{
 				"img": 		"zorka.png",
+				"title": 	"Мобильный трафик занимает все больше рынка! Монетизируй его!",
 				"position": [580,190],
 				"right": 	false,
-				"response": "speech::Zorka"
+				"response": "redirect::http://quest.conversion.im/zorka.html"
 			},
 			{
 				"img": 		"ctr.png",
+				"title": 	"Аудитория, которая покупает товарные офферы — безгранична. Пора и тебе заработать!",
 				"position": [730,190],
 				"right": 	false,
-				"response": "speech::CTR"
+				"response": "redirect::http://quest.conversion.im/ctr.html"
 			},
 		],
 		"response": 	"screen::start"

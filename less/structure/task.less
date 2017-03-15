@@ -2,6 +2,34 @@
 	min-height: 400px;
 	position: relative;
 
+	.tooltip {
+		display: inline;
+    	position: absolute;
+
+    	&:after {
+			font-family: sans-serif;
+  			background: #333;
+		    background: rgba(0,0,0,.8);
+		    border-radius: 5px;
+		    bottom: 26px;
+		    color: #fff;
+		    content: attr(title);
+		    left: 20%;
+		    padding: 5px 15px;
+		    position: absolute;
+		    z-index: 98;
+		    width: 220px;
+		    opacity: 0;
+		    transition: opacity 0.3s ease-in-out;
+  		}
+
+    	&:hover {
+			&:after {
+				opacity: 1;
+			}	
+    	}
+	}
+
 	.object {
 		position: absolute;
 		cursor: pointer;
