@@ -37,7 +37,7 @@ gulp.task('server-landing', function() {
 		open: true,
 		server: {
 			baseDir: './',
-			index: "wapclick.html"
+			index: "ctr.html"
 		},
 		reloadDelay: 2000,
 		watchOptions: {

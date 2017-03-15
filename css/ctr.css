@@ -1,0 +1,61 @@
+body {
+	background-image: url('/img/partners/ctr/bg.jpg');
+}
+
+.horse {
+	background-image: url('/img/partners/ctr/horse.png');
+	width: 100%;
+	height: 1200px;
+	background-position: center;
+}
+
+.car {
+	background-image: url('/img/partners/ctr/big_car.png');
+	top: -500px;
+	left: -250px;
+	width: 1200px;
+	height: 1200px;
+	background-position: center;
+}
+
+.clouds {
+	background-image: url('/img/partners/ctr/clouds.png');
+	width: 100vw;
+	height: 500px;
+	bottom: -100px;
+	background-position: left;
+	background-size: cover;
+}
+
+.car_left {
+	background-image: url('/img/partners/ctr/car_left.png');
+	width: 360px;
+	height: 360px;
+	left: 0px;
+	background-position: left;
+}
+
+.car_right {
+	background-image: url('/img/partners/ctr/car_right.png');
+	width: 360px;
+	height: 360px;
+	right: 0px;
+	background-position: right;
+}
+
+.promo {
+	margin-top: 100px;
+	background-color: white;
+	height: 200px;
+}
+
+.promo .object {
+	z-index: 6;
+}
+
+.promo .container {
+	background-image: url('/img/partners/ctr/promo.jpg');
+	background-repeat: no-repeat;
+	height: 200px;
+	background-position: center;
+}
