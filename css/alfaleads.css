@@ -1,0 +1,55 @@
+body {
+	background-image: url('/img/partners/alfaleads/bg.jpg');
+}
+
+.object {
+	position: absolute;
+	z-index: -1;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.car {
+	background-image: url('/img/partners/alfaleads/car.png');
+	width: 1200px;
+	height: 800px;
+	left: -200px;
+	top: -200px;
+	background-position: center;
+}
+
+.timati-left {
+	background-image: url('/img/partners/alfaleads/timati_left.png');
+	width: 400px;
+	height: 400px;
+	top: 300px;
+	left: 0;
+	background-position: left;
+}
+
+.timati-right {
+	background-image: url('/img/partners/alfaleads/timati_right.png');
+	width: 400px;
+	height: 400px;
+	top: 100px;
+	right: 0;
+	background-position: right;
+}
+
+.repost-title {
+	background-image: url('/img/partners/alfaleads/repost_title.png');
+	left: 100px;
+	top: 100px;
+	width: 500px;
+	height: 100px;
+	z-index: 2;
+}
+
+.car-small {
+	background-image: url('/img/partners/alfaleads/car_small.png');
+	width: 700px;
+	height: 400px;
+	top: -150px;
+	right: 0;
+	background-position: right;	
+}

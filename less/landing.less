@@ -10,7 +10,20 @@ body {
 	background-size: cover;
     background-attachment: fixed;
 	background-position: center;
-    background-image: url('/img/partners/bg/bg1.jpg')
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.container {
+    position: relative;
+    width: 786px;
+    margin: auto;
+}
+
+.section {
+    position: relative;
+    z-index: 2;
 }
 
 .button {
@@ -43,11 +56,6 @@ body {
         .gradient(#00b9ff, #00cfff);
         .shadow( rgba(0,148,183,1) );
     }
-}
-
-.container {
-    width: 786px;
-    margin: 50px auto;
 }
 
 .disclaimer {
@@ -118,7 +126,9 @@ body {
 }
 
 .subscribe {
+    position: relative;
     margin-top: 70px;
+    z-index: 3;
 
     .row {
         display: flex;
@@ -142,13 +152,28 @@ body {
 
 .partner {
     position: relative;
+    z-index: 2;
     margin-top: 70px;
-    background-color: white;
     text-align: center;
-    padding: 20px 20px 40px;
 
-    .logo {
-        display: inline-block;
+    .bg {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding: 20px 20px 40px;
+
+        .logo {
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+        }
+
+        p {
+            position: relative;
+            z-index: 2;
+        }
     }
 
     .button {
@@ -230,6 +255,7 @@ body {
 }
 
 footer {
+    position: relative;
     margin-top: 50px;
     padding: 20px;
     display: flex;
