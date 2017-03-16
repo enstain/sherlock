@@ -174,6 +174,7 @@ img.responsive {
   line-height: 60px;
   height: 60px;
   padding-left: 30px;
+  min-width: 310px;
   z-index: 4;
   -webkit-box-shadow: 0px 4px 0px 0px #b7b7b7;
   -moz-box-shadow: 0px 4px 0px 0px #b7b7b7;
