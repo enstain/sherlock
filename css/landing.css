@@ -179,14 +179,17 @@ img.responsive {
 }
 .subscribe #report {
   margin-top: 20px;
+  padding: 10px;
   font-size: 18px;
   text-align: center;
 }
 .subscribe #report.error {
   color: #ff2f00;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .subscribe #report.success {
   color: #ffcc00;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .subscribe .row {
   display: flex;
