@@ -52,6 +52,7 @@ img.responsive {
   color: black;
 }
 .button.yellow {
+  color: black;
   background: #ffe200;
   /* Old browsers */
   background: -moz-linear-gradient(top, #ffe200 0%, #ffe200 50%, #ffcc00 50%, #ffcc00 100%);
@@ -97,6 +98,22 @@ img.responsive {
   -webkit-box-shadow: 0px 4px 0px 0px #0094b7;
   -moz-box-shadow: 0px 4px 0px 0px #0094b7;
   box-shadow: 0px 4px 0px 0px #0094b7;
+}
+.button[disabled] {
+  color: white;
+  background: #eee;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #eee 0%, #eee 50%, #ddd 50%, #ddd 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #eee 0%, #eee 50%, #ddd 50%, #ddd 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #eee 0%, #eee 50%, #ddd 50%, #ddd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#eee, endColorstr=#ddd, GradientType=0);
+  /* IE6-9 */
+  -webkit-box-shadow: 0px 4px 0px 0px #b79300;
+  -moz-box-shadow: 0px 4px 0px 0px #b79300;
+  box-shadow: 0px 4px 0px 0px #b79300;
 }
 .disclaimer {
   color: white;
@@ -159,6 +176,17 @@ img.responsive {
   position: relative;
   margin-top: 70px;
   z-index: 3;
+}
+.subscribe #report {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+.subscribe #report.error {
+  color: #ff2f00;
+}
+.subscribe #report.success {
+  color: #ffcc00;
 }
 .subscribe .row {
   display: flex;

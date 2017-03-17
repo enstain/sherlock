@@ -53,6 +53,7 @@ img.responsive {
     color: black;
 
     &.yellow {
+        color: black;
         .gradient(#ffe200, #ffcc00);
         .shadow( rgba(183,147,0,1) );
     }
@@ -67,6 +68,12 @@ img.responsive {
         color: white;
         .gradient(#00b9ff, #00cfff);
         .shadow( rgba(0,148,183,1) );
+    }
+
+    &[disabled] {
+        color: white;
+        .gradient(#eee, #ddd);
+        .shadow( rgba(183,147,0,1) );
     }
 }
 
@@ -141,6 +148,20 @@ img.responsive {
     position: relative;
     margin-top: 70px;
     z-index: 3;
+
+    #report {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: center;
+
+        &.error {
+            color: #ff2f00;
+        }
+
+        &.success {
+            color: #ffcc00;
+        }
+    }
 
     .row {
         display: flex;

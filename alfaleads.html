@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=768, initial-scale=1"/>
 	<script src="/vendor/jquery/dist/jquery.min.js"></script>
 	<script src="js/share.js"></script>
+	<script src="js/subscribe.js"></script>
 	<title>Этюд о пропавшем профите</title>
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="icon" href="/favicon.ico">
@@ -36,15 +37,22 @@
 				</div>
 			</div>
 
-			<div class="subscribe section">
-				<form action="" class="row">
+			<div class="subscribe">
+				<form class="row">
 					<div class="col">
-						<input type="text" class="input" placeholder="Ваш e-mail">	
+						<input type="text" class="input" id="email_value" required="true" placeholder="Ваш e-mail">
 					</div>
 					<div class="col">
-						<button class="button yellow" type="submit">Получить бонусы от партнеров</button>
+						<button class="button yellow" id="submit_button" type="submit">Получить бонусы от партнеров</button>
 					</div>
 				</form>
+				<div class="row">
+					<div class="col">
+						<div id="report">
+							
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
