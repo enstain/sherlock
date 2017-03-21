@@ -56,17 +56,16 @@ body {
 }
 
 .bottom .partners ul {
-	display: inline-block;
+	list-style-type: none;
+	display: flex;
 	width: 100%;
 	padding: 0;
-	margin: 0;
+	margin: 0 0 10px;
 }
 
 .bottom .partners li {
 	padding: 0;
-	margin: 0;
-	display: inline-block;
-	width: 19%;
+	margin: auto;
 	text-align: center;
 }
 

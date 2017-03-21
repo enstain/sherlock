@@ -37,7 +37,7 @@ gulp.task('server-landing', function() {
 		open: true,
 		server: {
 			baseDir: './',
-			index: "zorka.html"
+			index: "alfaleads.html"
 		},
 		reloadDelay: 2000,
 		watchOptions: {

@@ -275,7 +275,7 @@ var SCREENS = {
 				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"img":		"../adwords.png",
+				"img":		"../swords.png",
 				"position":	[410,300],
 				"right":	false,
 				"response": "speech::С этим бы и ребенок справился… Мне стыдно за тебя."
@@ -308,7 +308,7 @@ var SCREENS = {
 				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"img":		"../adwords.png",
+				"img":		"../swords.png",
 				"position":	[410,300],
 				"right":	false,
 				"response": "speech::С этим бы и ребенок справился… Мне стыдно за тебя."
@@ -319,11 +319,11 @@ var SCREENS = {
 				"right":	true
 			}
 		],
-		"response": "screen::notebook_adwords" 
+		"response": "screen::notebook_swords" 
 	},
 
-	"notebook_adwords": {
-		"bg":			"adwords.jpg",
+	"notebook_swords": {
+		"bg":			"swords.jpg",
 		"type":			"select",
 		"speech":		"Что ты видишь на экране?",
 		"objects":		[
@@ -340,7 +340,7 @@ var SCREENS = {
 				"response":	"speech::Серьезно? Не знаешь даже основ? Ты бы еще забыл как дышать"
 			},
 			{
-				"img":		"../adwords.png",
+				"img":		"../swords.png",
 				"position":	[410,300],
 				"right":	true
 				
@@ -401,21 +401,21 @@ var SCREENS = {
 				"response": "speech::Может все-таки завод? Больше пользы будет."
 			},
 		],
-		"response": 	"screen::compare_adwords"
+		"response": 	"screen::compare_swords"
 	},
 
-	"compare_adwords": {
+	"compare_swords": {
 		"bg":			"none",
 		"type":			"select",
 		"speech":		"Какой креатив лучше?",
 		"objects": 		[
 			{
-				"img": 		"adwords_1.jpg",
+				"img": 		"swords_1.jpg",
 				"position": [160,210],
 				"right": 	true
 			},
 			{
-				"img": 		"adwords_2.jpg",
+				"img": 		"swords_2.jpg",
 				"position": [150,60],
 				"right": 	false,
 				"response": "speech::Ты поражаешь меня своим “выдающимся” интеллектом."
@@ -535,7 +535,7 @@ var SCREENS = {
 		"answers":		[
 			{
 				"text":		"Настоятельно рекомендую вам в начале ознакомиться с основами арбитража. Почитайте профильные форумы, блоги, паблики и изучите всевозможную информацию в интернете. Можете начать с conversion.im",
-				"response":	"screen::the_end"
+				"response":	"redirect::http://quest.conversion.im/final.html"
 			},
 			{
 				"text":		"Это не красный крест. Здесь каждый помогает себе сам.",
@@ -563,35 +563,35 @@ var SCREENS = {
 				"title": 	"Хочешь покорить бурж и получать выплаты в $$$? Тогда это твой выбор",
 				"position": [-50,150],
 				"right": 	false,
-				"response": "redirect::http://quest.conversion.im/adcombo.html"
+				"response": "redirect::/adcombo.html"
 			},
 			{
 				"img": 		"wapclick.png",
 				"title": 	"Мобильные подписки могут станут твоей золотой жилой и пассивным источником заработка!",
-				"position": [180,190],
+				"position": [170,190],
 				"right": 	false,
-				"response": "redirect::http://quest.conversion.im/wapclick.html"
+				"response": "redirect::/wapclick.html"
 			},
 			{
 				"img": 		"alfaleads.png",
 				"title": 	"Гэмблинг — вот где крутятся большие деньги! Готов зарабатывать на азарте?",
 				"position": [320,190],
 				"right": 	false,
-				"response": "redirect::http://quest.conversion.im/alfaleads.html"
+				"response": "redirect::/alfaleads.html"
 			},
 			{
 				"img": 		"zorka.png",
 				"title": 	"Мобильный трафик занимает все больше рынка! Монетизируй его!",
-				"position": [580,190],
+				"position": [610,190],
 				"right": 	false,
-				"response": "redirect::http://quest.conversion.im/zorka.html"
+				"response": "redirect::/zorka.html"
 			},
 			{
 				"img": 		"ctr.png",
 				"title": 	"Аудитория, которая покупает товарные офферы — безгранична. Пора и тебе заработать!",
 				"position": [730,190],
 				"right": 	false,
-				"response": "redirect::http://quest.conversion.im/ctr.html"
+				"response": "redirect::/ctr.html"
 			},
 		],
 		"response": 	"screen::start"

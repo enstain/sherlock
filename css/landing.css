@@ -294,9 +294,12 @@ img.responsive {
 }
 .actions {
   margin-top: 80px;
-  display: flex;
 }
-.actions .button {
+.actions .container {
+  display: flex;
+  width: 600px;
+}
+.actions .container .button {
   margin: auto;
 }
 footer {

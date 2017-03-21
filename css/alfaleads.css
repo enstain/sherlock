@@ -2,47 +2,74 @@ body {
 	background-image: url('/img/partners/alfaleads/bg.jpg');
 }
 
-.car {
-	background-image: url('/img/partners/alfaleads/car.png');
+.money {
+	background-image: url('/img/partners/alfaleads/money.png');
 	width: 1200px;
 	height: 800px;
 	left: -200px;
-	top: -200px;
+	top: -300px;
 	background-position: center;
+}
+
+.icon-heart {
+	background-image: url('/img/partners/alfaleads/heart.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 30px;
+	height: 20px;
+	display: inline-block;
 }
 
 .timati-left {
 	background-image: url('/img/partners/alfaleads/timati_left.png');
 	width: 400px;
 	height: 400px;
-	top: 300px;
+	top: 0px;
 	left: 0;
 	background-position: left;
 }
 
-.timati-right {
-	background-image: url('/img/partners/alfaleads/timati_right.png');
-	width: 400px;
-	height: 400px;
-	top: 100px;
-	right: 0;
-	background-position: right;
+.casino {
+	background-image: url('/img/partners/alfaleads/casino.png');
+	width: 1200px;
+	height: 800px;
+	left: -200px;
+	top: 0px;
+	background-position: center;
 }
 
 .repost-title {
 	background-image: url('/img/partners/alfaleads/repost_title.png');
-	left: 100px;
-	top: 100px;
-	width: 500px;
+	left: 0px;
+	top: 50px;
+	width: 100%;
 	height: 100px;
 	z-index: 2;
+	background-position: center;
 }
 
-.car-small {
-	background-image: url('/img/partners/alfaleads/car_small.png');
-	width: 700px;
-	height: 400px;
-	top: -150px;
+.car-left {
+	background-image: url('/img/partners/alfaleads/car_left.png');
+	width: 35vw;
+	height: 35vw;
+	bottom: 0px;
+	left: 0;
+	background-position: bottom;
+}
+
+.car-right {
+	background-image: url('/img/partners/alfaleads/car_right.png');
+	width: 40vw;
+	height: 40vw;
+	bottom: 0px;
 	right: 0;
-	background-position: right;	
+	background-position: bottom;
+}
+
+footer {
+	padding-top: 100px;
+	background-image: url('/img/partners/alfaleads/gold.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
 }
