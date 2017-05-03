@@ -20,12 +20,7 @@ button, .button {
 		left: 0px;
 		top: 0px;
 
-		border-style: solid;
-		border-width: 25px 25px 25px 25px;
-		-moz-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
-		-webkit-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
-		-o-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
-		border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
+		.border-image(url(/img/ui/button-border.png));
 	}
 
 	&:after {
@@ -65,9 +60,7 @@ button, .button {
 		background-size: contain;
 		background-position: center;
 
-		-ms-transform: rotate(0deg); /* IE 9 */
-	    -webkit-transform: rotate(0deg); /* Safari */
-	    transform: rotate(0deg);
+		.rotate();
 		transition: transform 0.5s ease-in-out;
 	}
 
@@ -75,13 +68,8 @@ button, .button {
 		position: absolute;
 		bottom: -25px;
 		z-index: 0;
-
-		border-style: solid;
-		border-width: 25px 25px 25px 25px;
-		-moz-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
-		-webkit-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
-		-o-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
-		border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
+		
+		.border-image(url(/img/ui/button-border.png));
 
 		input[type="text"] {
 			border: none;
@@ -105,9 +93,7 @@ button, .button {
 
 			&:hover {
 				& ~ .gear {
-					-ms-transform: rotate(-45deg); /* IE 9 */
-				    -webkit-transform: rotate(-45deg); /* Safari */
-				    transform: rotate(-45deg);
+				    .rotate(-45deg);
 				}
 			}
 		}
@@ -117,9 +103,7 @@ button, .button {
 
 			&:hover {
 				& ~ .gear {
-					-ms-transform: rotate(-135deg); /* IE 9 */
-				    -webkit-transform: rotate(-135deg); /* Safari */
-				    transform: rotate(-135deg);
+					.rotate(-135deg);
 				}
 			}
 		}
@@ -130,9 +114,7 @@ button, .button {
 
 			&:hover {
 				& ~ .gear {
-					-ms-transform: rotate(45deg); /* IE 9 */
-				    -webkit-transform: rotate(45deg); /* Safari */
-				    transform: rotate(45deg);
+					.rotate(45deg);
 				}
 			}
 		}
@@ -143,9 +125,7 @@ button, .button {
 
 			&:hover {
 				& ~ .gear {
-					-ms-transform: rotate(135deg); /* IE 9 */
-				    -webkit-transform: rotate(135deg); /* Safari */
-				    transform: rotate(135deg);
+					.rotate(135deg);
 				}
 			}
 		}

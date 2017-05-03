@@ -1,3 +1,15 @@
+.font-face(@name, @file) {
+	font-family: @name;
+    src: url('/fonts/@{file}.eot');
+    src: url('/fonts/@{file}.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/@{file}.woff2') format('woff2'),
+         url('/fonts/@{file}.woff') format('woff'),
+         url('/fonts/@{file}.ttf') format('truetype'),
+         url('/fonts/@{file}.svg#baron_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .gradient(@start, @stop) {
 	background: @start; /* Old browsers */
 	background: -moz-linear-gradient(top, @start 0%, @start 50%, @stop 50%, @stop 100%); /* FF3.6-15 */
@@ -10,4 +22,24 @@
 	-webkit-box-shadow: 0px 4px 0px 0px @color;
 	-moz-box-shadow: 0px 4px 0px 0px @color;
 	box-shadow: 0px 4px 0px 0px @color;
+}
+
+.border-image(@image, @size: 25, @type: round) {
+	border-style: solid;
+	border-width: ~"@{size}px";
+	-moz-border-image: @image @size @size @size @size @type;
+	-webkit-border-image: @image @size @size @size @size round;
+	-o-border-image: @image @size @size @size @size round;
+	border-image: @image @size @size @size @size round;
+}
+
+.rotate(@deg: 0deg) {
+	-ms-transform: rotate(@deg);
+    -webkit-transform: rotate(@deg);
+    transform: rotate(@deg);
+}
+
+.filter(@filter) {
+	-webkit-filter: @filter;
+	filter: @filter;
 }

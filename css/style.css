@@ -8,16 +8,6 @@
 * {
   outline: none;
 }
-@font-face {
-  font-family: 'Baron Neue';
-  src: url('/fonts/baron_neue-webfont.eot');
-  src: url('/fonts/baron_neue-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/baron_neue-webfont.woff2') format('woff2'), url('/fonts/baron_neue-webfont.woff') format('woff'), url('/fonts/baron_neue-webfont.ttf') format('truetype'), url('/fonts/baron_neue-webfont.svg#baron_neueregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  outline: none;
-}
 body {
   background-image: url('/img/bg.jpg');
   background-size: cover;
@@ -67,7 +57,7 @@ body {
   min-height: 400px;
   position: relative;
   border-style: solid;
-  border-width: 50px 50px 50px 50px;
+  border-width: 50px;
   -moz-border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
   -webkit-border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
   -o-border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
@@ -141,7 +131,7 @@ button:before,
   left: 0px;
   top: 0px;
   border-style: solid;
-  border-width: 25px 25px 25px 25px;
+  border-width: 25px;
   -moz-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
   -webkit-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
   -o-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
@@ -181,9 +171,7 @@ button:hover:after,
   background-size: contain;
   background-position: center;
   -ms-transform: rotate(0deg);
-  /* IE 9 */
   -webkit-transform: rotate(0deg);
-  /* Safari */
   transform: rotate(0deg);
   transition: transform 0.5s ease-in-out;
 }
@@ -192,7 +180,7 @@ button:hover:after,
   bottom: -25px;
   z-index: 0;
   border-style: solid;
-  border-width: 25px 25px 25px 25px;
+  border-width: 25px;
   -moz-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
   -webkit-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
   -o-border-image: url(/img/ui/button-border.png) 25 25 25 25 round;
@@ -218,9 +206,7 @@ button:hover:after,
 }
 #actions button:nth-child(1):hover ~ .gear {
   -ms-transform: rotate(-45deg);
-  /* IE 9 */
   -webkit-transform: rotate(-45deg);
-  /* Safari */
   transform: rotate(-45deg);
 }
 #actions button:nth-child(2) {
@@ -228,9 +214,7 @@ button:hover:after,
 }
 #actions button:nth-child(2):hover ~ .gear {
   -ms-transform: rotate(-135deg);
-  /* IE 9 */
   -webkit-transform: rotate(-135deg);
-  /* Safari */
   transform: rotate(-135deg);
 }
 #actions button:nth-child(3) {
@@ -239,9 +223,7 @@ button:hover:after,
 }
 #actions button:nth-child(3):hover ~ .gear {
   -ms-transform: rotate(45deg);
-  /* IE 9 */
   -webkit-transform: rotate(45deg);
-  /* Safari */
   transform: rotate(45deg);
 }
 #actions button:nth-child(4) {
@@ -250,9 +232,7 @@ button:hover:after,
 }
 #actions button:nth-child(4):hover ~ .gear {
   -ms-transform: rotate(135deg);
-  /* IE 9 */
   -webkit-transform: rotate(135deg);
-  /* Safari */
   transform: rotate(135deg);
 }
 #task.input #actions button:nth-child(2) {
@@ -268,7 +248,7 @@ button:hover:after,
   float: left;
   box-sizing: border-box;
   border-style: solid;
-  border-width: 85px 85px 85px 85px;
+  border-width: 85px;
   -moz-border-image: url(/img/ui/dialog-border.png) 85 85 85 85 round;
   -webkit-border-image: url(/img/ui/dialog-border.png) 85 85 85 85 round;
   -o-border-image: url(/img/ui/dialog-border.png) 85 85 85 85 round;

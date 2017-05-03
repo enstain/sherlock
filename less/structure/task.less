@@ -35,23 +35,15 @@
 		cursor: pointer;
 		
 		&:hover {
-			-webkit-filter: drop-shadow(0px 0px 20px rgba(255,254,0,1));
-	  		filter: drop-shadow(0px 0px 20px rgba(255,254,0,1));
+			.filter(drop-shadow(0px 0px 20px rgba(255,254,0,1)));
 		}
 
 		&.selected {
-			-webkit-filter: drop-shadow(0px 0px 20px rgba(0,255,0,1));
-	  		filter: drop-shadow(0px 0px 20px rgba(0,255,0,1));
+			.filter(drop-shadow(0px 0px 20px rgba(0,255,0,1)));
 		}
 	}
 
-	border-style: solid;
-	border-width: 50px 50px 50px 50px;
-	-moz-border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
-	-webkit-border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
-	-o-border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
-	border-image: url(/img/ui/task-border.png) 50 50 50 50 round;
-
+	.border-image(url(/img/ui/task-border.png), 50);
 } 
 
 #bg {
